@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-12">
+      <article>
+        <p><a href="/worlds">&larr; Back to Worlds</a></p>
+        <hr>
+        <header>
+          <h1>{{data.world.title}}</h1>
+        </header>
+        <div class="row">
+          <div class="col-md-8 col=lg-8">
+            {{#if data.world.intro}}
+            {{data.world.intro}}
+            {{/if}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col=lg-4">
+            {{#if data.world.races}}
+            {{data.world.races}}
+            {{/if}}
+          </div>
+          <div class="col-md-4 col=lg-4">
+            {{#if data.world.geography}}
+            {{data.world.geography}}
+            {{/if}}
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
