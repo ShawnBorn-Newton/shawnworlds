@@ -4,8 +4,12 @@
     <div class="col-md-12 col-lg-12">
       <div class="row">
         {{#each worlds}}
-          <div class="col-md-4 col=lg=4">
-           <h2><a href="{{worldUrl slug}}">{{{title}}}</a></h2>
+          <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+            <div class="card-header"><a href="{{worldUrl slug}}">{{{title}}}</a></div>
+            <div class="card-body">
+              <h4 class="card-title">Secondary card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
           </div>
         {{/each}}
       </div>

@@ -1,12 +1,39 @@
 {{!< default}}
 <div class="container">
-<div class="jumbotron">
+<div class="jumbotron" style="text">
+  <!--title-->
   <h1 class="display-3">Hello, shawnworlds!</h1>
+  <!--intro-->
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
   <hr class="my-4">
+  <!--content-->
   <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   </p>
 </div>
+
+
+<!--worlds-->
+  <h1>Worlds</h1>
+  <div class="row">
+    <div class="col-md-12 col-lg-12">
+      <div class="row">
+        {{#each worlds}}
+          <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+            <div class="card-header"><a href="{{worldUrl slug}}">{{{title}}}</a></div>
+            <div class="card-body">
+              <h4 class="card-title">Secondary card title</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+<!--end main container-->
+
+
+
 </div>
